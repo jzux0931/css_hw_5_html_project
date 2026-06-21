@@ -1,0 +1,95 @@
+@use '../abstracts' as *;
+
+.archive-grid {
+    display: grid;
+    gap: var(--cards-grid-gap);
+    margin-bottom: var(--space-section);
+}
+
+.archive-card {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: var(--space-stack);
+    padding: var(--padding-card);
+    background:
+        radial-gradient(circle at top right, var(--surface-accent-soft), transparent 28%),
+        linear-gradient(180deg, rgba(17, 28, 67, 0.94), rgba(15, 31, 61, 0.88));
+    border: 1px solid var(--surface-border-default);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-hard);
+    transition:
+        transform 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out,
+        border-color 0.15s ease-in-out,
+        background-color 0.15s ease-in-out;
+
+    &:hover {
+        transform: var(--interactive-lift-md);
+        border-color: var(--surface-border-strong);
+        box-shadow: var(--shadow-glow);
+    }
+
+    &__media {
+        width: 100%;
+        min-height: 15rem;
+        overflow: hidden;
+        border-radius: var(--radius-sm);
+        border: 1px solid var(--surface-border-subtle);
+        background: var(--surface-fill-soft);
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__body {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: var(--space-stack);
+    }
+
+    &__title {
+        color: var(--color-text);
+        font-size: var(--title-card);
+        line-height: var(--leading-title);
+        text-align: center;
+    }
+
+    &__text {
+        color: var(--color-gray);
+        font-size: var(--text-card);
+        line-height: var(--leading-copy);
+        text-align: center;
+    }
+
+    &__cta {
+        justify-self: center;
+    }
+}
+
+@include desktop {
+    .archive-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: stretch;
+    }
+
+    .archive-card {
+        min-height: 100%;
+
+        &__body {
+            gap: var(--space-block);
+        }
+
+        &__title {
+            min-height: 4.75rem;
+        }
+
+        &__media {
+            min-height: 18rem;
+        }
+    }
+}
+

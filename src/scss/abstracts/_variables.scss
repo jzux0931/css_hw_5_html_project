@@ -1,0 +1,91 @@
+:root {
+  // Colors
+  --color-dark-1: #050816;
+  --color-dark-2: #0B1330;
+  --color-gray: #B7C4E0;
+  --color-text: #F5FAFF;
+  --color-text-2: #9FB3D9;
+  --color-accent: #39E7FF;
+  --color-accent-2: #A8FF60;
+
+  // Surface
+  --surface-border-subtle: rgba(57, 231, 255, 0.12);
+  --surface-border-default: rgba(57, 231, 255, 0.14);
+  --surface-border-strong: rgba(57, 231, 255, 0.22);
+  --surface-fill-soft: rgba(255, 255, 255, 0.03);
+  --surface-fill-muted: rgba(255, 255, 255, 0.04);
+  --surface-fill-hover: rgba(255, 255, 255, 0.08);
+  --surface-accent-soft: rgba(57, 231, 255, 0.10);
+  --surface-accent-strong: rgba(57, 231, 255, 0.16);
+
+  // Typography
+  --font-heading: 'Space Grotesk', Arial, Helvetica, sans-serif;
+  --font-primary: 'Manrope', Arial, Helvetica, sans-serif;
+
+  // Type scale
+  --title-display: clamp(2.5rem, 4vw, 3.125rem);
+  --title-page: clamp(2.35rem, 4.5vw, 2.9rem);
+  --title-section: clamp(2rem, 4vw, 2.5rem);
+  --title-card: clamp(1.4rem, 2.4vw, 1.85rem);
+  --title-article: clamp(2rem, 4.4vw, 3rem);
+  --text-display: clamp(1.3rem, 2.2vw, 1.625rem);
+  --text-lead: clamp(1.12rem, 1.8vw, 1.28rem);
+  --text-section: clamp(1.05rem, 1.5vw, 1.14rem);
+  --text-card: clamp(1rem, 1.2vw, 1.08rem);
+  --text-body: clamp(1.06rem, 1.35vw, 1.16rem);
+  --text-meta: 1rem;
+  --leading-tight: 1.1;
+  --leading-title: 1.2;
+  --leading-copy: 1.72;
+  --leading-relaxed: 1.9;
+
+  // Layout
+  --shell-page-max: 1200px;
+  --shell-content-medium: 640px;
+  --hero-main-max-width: 680px;
+  --hero-secondary-max-width: 520px;
+  --hero-media-max-width: 540px;
+  --container-padding-inline: 24px;
+  --container-mobile-fluid: min(768px, calc(100% - (var(--container-padding-inline) * 2)));
+  --cards-grid-gap: 24px;
+  --card-media-height: 300px;
+  --section-padding-block: 32px;
+
+  // Spacing
+  --space-page-start: 60px;
+  --space-section: 80px;
+  --space-section-compact: 40px;
+  --space-block: 32px;
+  --space-stack: 24px;
+  --space-stack-sm: 16px;
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 40px;
+
+  // Padding
+  --padding-card: 24px;
+  --padding-content: 24px;
+  --padding-content-lg: 40px;
+  --padding-shell-inline: 20px;
+
+  // Radius
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-pill: 999px;
+
+  // Effects
+  --shadow-soft: 0 0 10px rgba(57, 232, 255, 0.578);
+  --shadow-hard: 0 16px 40px rgba(0, 0, 0, 0.34);
+  --shadow-glow: 0 0 0 1px var(--surface-border-subtle), 0 5px 30px rgba(57, 231, 255, 0.16);
+  --interactive-lift-sm: translateY(-1.5px);
+  --interactive-lift-md: translateY(-2.5px);
+}
+
+// Breakpoints
+$breakpoints: (
+  tablet: 768px,
+  desktop: 1200px
+);
+

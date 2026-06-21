@@ -1,0 +1,24 @@
+@use '../abstracts' as *;
+
+.section-header {
+    display: grid;
+    gap: var(--space-stack-sm);
+    margin-bottom: var(--space-block);
+    text-align: center;
+}
+
+.section-title {
+    color: var(--color-text);
+    font-size: var(--title-section);
+    line-height: var(--leading-title);
+    text-transform: uppercase;
+    margin-top: var(--space-block);
+}
+
+.section-text {
+    color: var(--color-gray);
+    max-width: 50rem;
+    margin-inline: auto;
+    font-size: var(--text-section);
+    line-height: var(--leading-copy);
+}

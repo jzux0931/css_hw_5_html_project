@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Descubre y aprende todo lo relacionado con el Desarrollo FullStack"/>
+    <title>CSS Homework 5 - ¿Qué es ser Full-Stack Developer? | Conquer Crypto</title>
+  </head>
+
+  <body class="main">
+    <header class="header">
+      <figure>
+        <img
+          width="220px"
+          src="/src/assets/icons/logotipo-conquer-crypto.png"
+          alt="Logotipo de Conquer Crypto"
+        />
+      </figure>
+
+      <nav class="navbar">
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+        <label for="menu-toggle" class="hamburger-btn">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+
+        <div class="side-menu">
+          <ul class="menu-links">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../quienes-somos.html">Quiénes Somos</a></li>
+            <li class="menu-item menu-item--has-submenu">
+              <details class="submenu">
+                <summary class="submenu__trigger">Cursos</summary>
+                <ul class="submenu-links">
+                  <li><a href="../cursos.html">Ver todos los cursos</a></li>
+                  <li><a href="../cursos/curso-fullstack.html">Curso FullStack</a></li>
+                  <li><a href="../cursos/curso-ia.html">Curso IA</a></li>
+                </ul>
+              </details>
+            </li>
+            <li class="menu-item menu-item--has-submenu">
+              <details class="submenu">
+                <summary class="submenu__trigger is-current">Blog</summary>
+                <ul class="submenu-links">
+                  <li><a href="../blog.html">Ver todo el blog</a></li>
+                  <li><a href="blog-fullstack-roadmap.html">Roadmap FullStack</a></li>
+                  <li><a class="is-current" aria-current="page" href="blog-que-es-fullstack-dev.html">Qué es FullStack</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a href="../registro.html">Registro</a></li>
+            <li><a href="../login.html">Login</a></li>
+            <li><a href="../contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <section class="article-shell content-shell content-shell--wide">
+        <article class="article-content">
+          <div class="article-hero">
+            <figure class="article-media article-media--contain">
+              <img
+                class="article-image article-image--contain"
+                src="/src/assets/img/que-es-fullstack.jpeg"
+                alt="¿Qué es un Full-Stack Developer? Alta demanda y buenos salarios"
+              />
+            </figure>
+
+            <div class="article-copy">
+              <h1 class="article-title">¿Qué es un Full-Stack Developer? Alta demanda y buenos salarios</h1>
+              <p class="article-lead">
+                FullStack es uno de esos términos que aparecen por todas partes, pero no
+                siempre se explican con claridad.
+              </p>
+              <p class="article-text">
+                En este artículo vamos a profundizar en lo que significa realmente ser un
+                desarrollador Full-Stack y por qué se ha convertido en uno de los perfiles más
+                valiosos dentro del mundo del desarrollo web.
+              </p>
+            </div>
+          </div>
+
+          <div class="article-copy">
+            <p class="article-text">
+              Seguro has visto este concepto en anuncios, publicaciones y contenidos sobre
+              tecnología, pero entender su verdadero alcance es importante si estás buscando
+              construir una carrera sólida dentro del sector.
+            </p>
+
+            <p class="article-text">
+              Un desarrollador Full-Stack no es alguien que "sabe un poco de todo" sin rumbo,
+              sino un profesional capaz de trabajar con criterio tanto en la parte visual como
+              en la lógica que hace funcionar una aplicación web.
+            </p>
+
+            <h2 class="section-title">¿Qué significa ser un Full-Stack?</h2>
+
+            <p class="article-text">
+              Ser Full-Stack implica entender cómo se conectan frontend y backend dentro de un
+              mismo producto. Esa visión más amplia permite colaborar mejor, detectar problemas
+              con mayor rapidez y aportar soluciones con más contexto técnico.
+            </p>
+
+            <p class="article-text">
+              Precisamente por eso este perfil tiene tanta demanda: combina versatilidad,
+              criterio técnico y una comprensión global del desarrollo de software.
+            </p>
+          </div>
+        </article>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p class="footer__container">© Conquer Crypto 2023 - <a class="footer__link" href="../aviso-legal.html">Aviso Legal</a></p>
+    </footer>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

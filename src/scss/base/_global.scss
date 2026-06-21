@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  font-family: var(--font-primary);
+  background-color: var(--color-dark-1);
+  color: var(--color-text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+    min-height: 100%;
+    scrollbar-gutter: stable;
+}
+
+main {
+  width: 100%;
+  flex: 1;
+}
+
+.main {
+  width: 100%;
+  min-height: 100svh;
+  background:
+    radial-gradient(circle at 12% 12%, rgba(57, 231, 255, 0.22), transparent 20%),
+    radial-gradient(circle at 84% 20%, rgba(255, 94, 138, 0.26), transparent 20%),
+    radial-gradient(circle at 50% 100%, rgba(12, 200, 235, 0.22), transparent 28%),
+    linear-gradient(180deg, #030611 0%, #07112B 48%, #040814 100%);
+}

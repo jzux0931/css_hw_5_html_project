@@ -1,0 +1,56 @@
+@use '../abstracts' as *;
+
+.contact-stack {
+    display: grid;
+    gap: var(--space-section-compact);
+    margin-top: var(--space-section-compact);
+    margin-bottom: var(--space-section);
+
+    & > div {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        align-content: start;
+    }
+
+    &__form {
+        width: min(100%, var(--container-mobile-fluid));
+        max-width: none;
+        margin-inline: auto;
+    }
+}
+
+.contact-map {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid var(--surface-border-default);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-hard);
+
+    &__frame {
+        display: block;
+        width: 100%;
+        min-height: 22rem;
+        border: 0;
+    }
+}
+
+@include desktop {
+    .contact-stack {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: var(--space-section);
+    }
+
+    .contact-stack__form {
+        width: 100%;
+        max-width: none;
+        margin-inline: 0;
+    }
+
+    .contact-map__frame {
+        min-height: 30rem;
+    }
+}
+
+
+
+

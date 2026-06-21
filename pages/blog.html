@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <meta name="description" content="Descubre el equipo que forma nuestra academia"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Homework 5 - Blog | Conquer Crypto</title>
+  </head>
+
+  <body class="main">
+    <header class="header">
+      <figure>
+        <img
+          width="220px"
+          src="/src/assets/icons/logotipo-conquer-crypto.png"
+          alt="Logotipo de Conquer Crypto"
+        />
+      </figure>
+      
+      <nav class="navbar">
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+        <label for="menu-toggle" class="hamburger-btn">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+
+        <div class="side-menu">
+          <ul class="menu-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+            <li class="menu-item menu-item--has-submenu">
+              <details class="submenu">
+                <summary class="submenu__trigger">Cursos</summary>
+                <ul class="submenu-links">
+                  <li><a href="cursos.html">Ver todos los cursos</a></li>
+                  <li><a href="cursos/curso-fullstack.html">Curso FullStack</a></li>
+                  <li><a href="cursos/curso-ia.html">Curso IA</a></li>
+                </ul>
+              </details>
+            </li>
+            <li class="menu-item menu-item--has-submenu">
+              <details class="submenu">
+                <summary class="submenu__trigger is-current">Blog</summary>
+                <ul class="submenu-links">
+                  <li><a class="is-current" aria-current="page" href="blog.html">Ver todo el blog</a></li>
+                  <li><a href="blog/blog-fullstack-roadmap.html">Roadmap FullStack</a></li>
+                  <li><a href="blog/blog-que-es-fullstack-dev.html">Qué es FullStack</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-intro content-shell content-shell--wide">
+        <h1 class="page-intro__title">
+          Descubre las últimas noticias relacionadas con el desarrollo FullStack
+        </h1>
+        <p class="page-intro__text">
+          En nuestro blog podrás mantenerte al día con novedades, tendencias y
+          contenido útil para seguir creciendo como desarrollador.
+        </p>
+      </section>
+
+      <section class="content-shell content-shell--wide">
+        <div class="section-header">
+          <h2 class="section-title">Últimas noticias</h2>
+          <p class="section-text">
+            Explora los artículos más recientes y descubre recursos pensados para
+            reforzar tu camino en el desarrollo FullStack.
+          </p>
+        </div>
+
+        <div class="archive-grid">
+          <article class="archive-card">
+            <figure class="archive-card__media">
+              <img
+                class="archive-card__image"
+                src="/src/assets/img/fullstack-roadmap.jpeg"
+                alt="Tecnologías para ser Full-Stack Developer - Roadmap Completo"
+              />
+            </figure>
+
+            <div class="archive-card__body">
+              <h3 class="archive-card__title">Tecnologías para ser Full-Stack Developer - Roadmap Completo</h3>
+              <p class="archive-card__text">
+                Ahora que ya sabemos qué es ser un Full-Stack, te contamos qué pasos
+                seguir para construir tu camino y convertirte en uno de estos perfiles
+                tan buscados.
+              </p>
+            </div>
+
+            <a class="archive-card__cta button-pill" href="blog/blog-fullstack-roadmap.html">
+              Ver noticia
+            </a>
+          </article>
+
+          <article class="archive-card">
+            <figure class="archive-card__media">
+              <img
+                class="archive-card__image"
+                src="/src/assets/img/que-es-fullstack.jpeg"
+                alt="¿Qué es un Full-Stack Developer? Alta demanda y buenos salarios"
+              />
+            </figure>
+
+            <div class="archive-card__body">
+              <h3 class="archive-card__title">¿Qué es un Full-Stack Developer? Alta demanda y buenos salarios</h3>
+              <p class="archive-card__text">
+                Descubre qué significa realmente ser un desarrollador FullStack, por qué
+                las empresas lo buscan tanto y qué lo convierte en un perfil tan valioso.
+              </p>
+            </div>
+
+            <a class="archive-card__cta button-pill" href="blog/blog-que-es-fullstack-dev.html">
+              Ver noticia
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__container">© Conquer Crypto 2023 - <a class="footer__link" href="aviso-legal.html">Aviso Legal</a></p>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

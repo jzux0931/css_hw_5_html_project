@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Descubre y aprende todo lo relacionado con el Desarrollo FullStack"/>
+    <title>CSS Homework 5 - Tecnologias para ser Full-Stack Developer | Conquer Crypto</title>
+  </head>
+
+<body class="main">
+  <header class="header">
+    <figure>
+      <img
+        width="220px"
+        src="/src/assets/icons/logotipo-conquer-crypto.png"
+        alt="Logotipo de Conquer Crypto"
+      />
+    </figure>
+
+    <nav class="navbar">
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+      <label for="menu-toggle" class="hamburger-btn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </label>
+      
+      <div class="side-menu">
+        <ul class="menu-links">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../quienes-somos.html">Quiénes Somos</a></li>
+          <li class="menu-item menu-item--has-submenu">
+            <details class="submenu">
+              <summary class="submenu__trigger">Cursos</summary>
+              <ul class="submenu-links">
+                <li><a href="../cursos.html">Ver todos los cursos</a></li>
+                <li><a href="../cursos/curso-fullstack.html">Curso FullStack</a></li>
+                <li><a href="../cursos/curso-ia.html">Curso IA</a></li>
+              </ul>
+            </details>
+          </li>
+          <li class="menu-item menu-item--has-submenu">
+            <details class="submenu">
+              <summary class="submenu__trigger is-current">Blog</summary>
+              <ul class="submenu-links">
+                <li><a href="../blog.html">Ver todo el blog</a></li>
+                <li><a class="is-current" aria-current="page" href="blog-fullstack-roadmap.html">Roadmap FullStack</a></li>
+                <li><a href="blog-que-es-fullstack-dev.html">Qué es FullStack</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="../registro.html">Registro</a></li>
+          <li><a href="../login.html">Login</a></li>
+          <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="article-shell content-shell content-shell--wide">
+      <article class="article-content">
+        <div class="article-hero">
+          <figure class="article-media article-media--contain">
+            <img
+              class="article-image article-image--contain"
+              src="/src/assets/img/fullstack-roadmap.jpeg"
+              alt="Tecnologías para ser Full-Stack Developer - Roadmap Completo"
+            />
+          </figure>
+
+          <div class="article-copy">
+            <h1 class="article-title">Tecnologías para ser Full-Stack Developer - Roadmap Completo</h1>
+            <p class="article-lead">
+              Ahora que ya sabemos qué es ser un Full-Stack Developer, vale la pena
+              entender qué camino seguir para convertirte en uno de estos perfiles tan
+              completos y buscados.
+            </p>
+            <p class="article-text">
+              En esta guía repasamos las tecnologías y áreas que suelen formar parte del
+              recorrido, para que tengas una visión más clara del proceso y puedas avanzar
+              con una ruta mucho más definida.
+            </p>
+          </div>
+        </div>
+
+        <div class="article-copy">
+          <p class="article-text">
+            En nuestro <a href="https://www.conquercrypto.com/post/que-es-fullstack-developer" target="_blank">anterior post</a>
+            te contamos qué significa ser un Full-Stack Developer, ese perfil que tanto
+            buscan las empresas de la industria del desarrollo web y por qué se pagan
+            salarios tan altos.
+          </p>
+
+          <p class="article-text">
+            Ahora que ya sabemos qué es ser un Full-Stack, la pregunta natural es:
+            ¿qué pasos debemos seguir para llegar a ser uno? Ese es precisamente el objetivo
+            de este roadmap.
+          </p>
+
+          <h2 class="section-title">Tecnologías para llegar a ser un Full-Stack Developer</h2>
+
+          <p class="article-text">
+            Un desarrollador Full-Stack debe poder involucrarse en todas las partes que
+            componen una aplicación web. Esto significa comprender tanto el frontend como
+            el backend, y ser capaz de evaluar con una visión más completa cómo se construye
+            una funcionalidad real.
+          </p>
+
+          <p class="article-text">
+            Ese doble conocimiento facilita el trabajo diario, mejora la comunicación con el
+            equipo y permite tomar mejores decisiones técnicas al momento de desarrollar,
+            mantener o escalar un proyecto.
+          </p>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer__container">© Conquer Crypto 2023 - <a class="footer__link" href="../aviso-legal.html">Aviso Legal</a></p>
+  </footer>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

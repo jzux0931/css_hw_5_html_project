@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <meta name="description" content="Descubre el equipo que forma nuestra academia"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Homework 5 - Quienes somos | Conquer Crypto</title>
+  </head>
+
+  <body class="main">
+    <header class="header">
+      <figure>
+        <img
+          width="220px"
+          src="/src/assets/icons/logotipo-conquer-crypto.png"
+          alt="Logotipo de Conquer Crypto"
+        />
+      </figure>
+      
+      <nav class="navbar">
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+        <label for="menu-toggle" class="hamburger-btn">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+
+        <div class="side-menu">
+          <ul class="menu-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a class="is-current" aria-current="page" href="quienes-somos.html">Quiénes Somos</a></li>
+            <li class="menu-item menu-item--has-submenu">
+              <details class="submenu">
+                <summary class="submenu__trigger">Cursos</summary>
+                <ul class="submenu-links">
+                  <li><a href="cursos.html">Ver todos los cursos</a></li>
+                  <li><a href="cursos/curso-fullstack.html">Curso FullStack</a></li>
+                  <li><a href="cursos/curso-ia.html">Curso IA</a></li>
+                </ul>
+              </details>
+            </li>
+            <li class="menu-item menu-item--has-submenu">
+              <details class="submenu">
+                <summary class="submenu__trigger">Blog</summary>
+                <ul class="submenu-links">
+                  <li><a href="blog.html">Ver todo el blog</a></li>
+                  <li><a href="blog/blog-fullstack-roadmap.html">Roadmap FullStack</a></li>
+                  <li><a href="blog/blog-que-es-fullstack-dev.html">Qué es FullStack</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-intro content-shell content-shell--wide">
+        <h1 class="page-intro__title">Descubre el equipo que forma Conquer Crypto</h1>
+        <p class="page-intro__text">
+          Conoce a las personas que impulsan la formación, el acompañamiento y la
+          visión educativa detrás de nuestra academia.
+        </p>
+      </section>
+
+      <section class="about-overview content-shell content-shell--wide">
+        <article class="article-content">
+          <div class="article-copy">
+            <h2 class="section-title">Una academia enfocada en crecimiento real</h2>
+            <p class="article-text">
+              En Conquer Crypto buscamos que el aprendizaje técnico se sienta cercano,
+              retador y bien acompañado. Nuestra misión es ayudarte a construir habilidades
+              útiles en el mundo real, con una formación orientada a desarrollo FullStack, 
+              Blockchain e Inteligencia Artificial.
+            </p>
+            <p class="article-text">
+              Detrás de esa experiencia hay un equipo que combina criterio técnico,
+              acompañamiento humano y una visión muy clara de lo que significa crecer como
+              desarrollador en la industria actual.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="about-team content-shell content-shell--wide">
+        <div class="section-header">
+          <h2 class="section-title">El equipo de Conquer Crypto</h2>
+          <p class="section-text">
+            Estas son algunas de las personas que forman parte del equipo y hacen posible
+            el proceso de formación dentro de la academia.
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <article class="team-card">
+            <figure class="team-card__media">
+              <img
+                class="team-card__image"
+                src="/src/assets/img/yolanda.jpeg"
+                alt="Yolanda"
+              />
+            </figure>
+
+            <div class="team-card__body">
+              <h3 class="team-card__name">Yolanda</h3>
+              <p class="team-card__text">
+                Profesora de Conquerblocks Cripto, Ingeniera en telecomunicaciones y Blockchain 
+                con más de 15 años de experiencia en la industria, colaborando con grandes
+                compañías en el sector de la tecnología, experta en Solidity y SQL.
+              </p>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <figure class="team-card__media">
+              <img
+                class="team-card__image"
+                src="/src/assets/img/alexis.jpeg"
+                alt="Alexis"
+              />
+            </figure>
+
+            <div class="team-card__body">
+              <h3 class="team-card__name">Alexis</h3>
+              <p class="team-card__text">
+                CEO y lider de la plataforma Conquer X, y todas sus ramas educativas, contribuye 
+                con su amplia y basta experiencia en educacion online, y tambien en la industria 
+                de la tecnología de desarrollo y Blockchain.
+              </p>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <figure class="team-card__media">
+              <img
+                class="team-card__image"
+                src="/src/assets/img/bienvenido.jpeg"
+                alt="Bienvenido"
+              />
+            </figure>
+
+            <div class="team-card__body">
+              <h3 class="team-card__name">Bienvenido</h3>
+              <p class="team-card__text">
+                Programador especializado con más de 15 años de experiencia en el sector educativo
+                siendo formador y mentor para profesionales en desarrollo en tecnologías como HTML, CSS, Javascript
+                y Django. 
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__container">© Conquer Crypto 2023 - <a class="footer__link" href="aviso-legal.html">Aviso Legal</a></p>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

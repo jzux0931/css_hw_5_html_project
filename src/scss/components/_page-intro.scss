@@ -1,0 +1,38 @@
+@use '../abstracts' as *;
+
+.content-shell {
+    width: min(100%, var(--shell-content-medium));
+    margin-inline: auto;
+    padding-inline: var(--padding-shell-inline);
+
+    &--wide {
+        width: min(100%, var(--shell-page-max));
+    }
+}
+
+.page-intro {
+    display: grid;
+    gap: var(--space-stack);
+    margin-top: var(--space-page-start);
+    text-align: center;
+
+    &__title {
+        color: var(--color-text);
+        font-size: var(--title-page);
+        line-height: var(--leading-tight);
+        text-transform: uppercase;
+    }
+
+    &__text {
+        color: var(--color-gray);
+        max-width: 50rem;
+        margin-inline: auto;
+        font-size: var(--text-lead);
+        line-height: var(--leading-copy);
+    }
+
+    @include desktop {
+        gap: var(--space-block);
+    }
+}
+

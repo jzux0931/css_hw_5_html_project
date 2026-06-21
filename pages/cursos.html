@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <meta name="description" content="Descubre el equipo que forma nuestra academia"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Homework 5 - Cursos | Conquer Crypto</title>
+  </head>
+
+  <body class="main">
+    <header class="header">
+      <figure>
+        <img
+          width="220px"
+          src="/src/assets/icons/logotipo-conquer-crypto.png"
+          alt="Logotipo de Conquer Crypto"
+        />
+      </figure>
+      
+      <nav class="navbar">
+          <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+          <label for="menu-toggle" class="hamburger-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </label>
+
+        <div class="side-menu">
+          <ul class="menu-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+            <li class="menu-item menu-item--has-submenu">
+              <details class="submenu">
+                <summary class="submenu__trigger is-current">Cursos</summary>
+                <ul class="submenu-links">
+                  <li><a class="is-current" aria-current="page" href="cursos.html">Ver todos los cursos</a></li>
+                  <li><a href="cursos/curso-fullstack.html">Curso FullStack</a></li>
+                  <li><a href="cursos/curso-ia.html">Curso IA</a></li>
+                </ul>
+              </details>
+            </li>
+            <li class="menu-item menu-item--has-submenu">
+              <details class="submenu">
+                <summary class="submenu__trigger">Blog</summary>
+                <ul class="submenu-links">
+                  <li><a href="blog.html">Ver todo el blog</a></li>
+                  <li><a href="blog/blog-fullstack-roadmap.html">Roadmap FullStack</a></li>
+                  <li><a href="blog/blog-que-es-fullstack-dev.html">Qué es FullStack</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-intro content-shell content-shell--wide">
+        <h1 class="page-intro__title">
+          Descubre el catálogo de cursos que podrás realizar en Conquer Crypto
+        </h1>
+        <p class="page-intro__text">
+          Comienza tu carrera como desarrollador blockchain profesional. Únete a
+          los más de <strong>500 alumnos</strong> que ya forman parte del
+          máster.
+        </p>
+      </section>
+
+      <section class="content-shell content-shell--wide">
+        <div class="section-header">
+          <h2 class="section-title">Últimos cursos</h2>
+          <p class="section-text">
+            Descubre los últimos cursos que podrás encontrar en nuestra plataforma
+          </p>
+        </div>
+
+        <div class="archive-grid">
+          <article class="archive-card">
+            <figure class="archive-card__media">
+              <img
+                class="archive-card__image"
+                src="https://cdn.prod.website-files.com/69b1ac77ab08aea861c16727/69c0965b281724118b0e3475_65a659d53096eb40f1b4d736_curso-gratis-fullstack-para-principiantes.jpeg"
+                alt="Curso de Desarrollo FullStack"
+              />
+            </figure>
+
+            <div class="archive-card__body">
+              <h3 class="archive-card__title">Curso de Desarrollo FullStack</h3>
+              <p class="archive-card__text">
+                Aprende la profesión con salarios de media de más de $100,000 al
+                año, de la mano del máster en Desarrollo Blockchain de Conquer
+                Blocks.
+              </p>
+            </div>
+
+            <a class="archive-card__cta button-pill" href="cursos/curso-fullstack.html">
+              Ver curso
+            </a>
+          </article>
+
+          <article class="archive-card">
+            <figure class="archive-card__media">
+              <img
+                class="archive-card__image"
+                src="https://cdn.sologo.ai/2025/0218/20250218064857679.png"
+                alt="Curso de Desarrollo en Inteligencia Artificial"
+              />
+            </figure>
+
+            <div class="archive-card__body">
+              <h3 class="archive-card__title">Curso de Desarrollo en Inteligencia Artificial</h3>
+              <p class="archive-card__text">
+                Aprende a desarrollar en la tecnología emergente que más rápido
+                crece de la historia. Domina el desarrollo de algoritmos de machine
+                Learning, Deep Learning, Natural Language Processing y Computer
+                Vision, aunque no tengas conocimientos previos de tecnología ni
+                programación.
+              </p>
+            </div>
+
+            <a class="archive-card__cta button-pill" href="cursos/curso-ia.html">
+              Ver curso
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__container">© Conquer Crypto 2023 - <a class="footer__link" href="aviso-legal.html">Aviso Legal</a></p>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

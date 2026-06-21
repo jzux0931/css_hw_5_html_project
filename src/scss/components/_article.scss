@@ -1,0 +1,116 @@
+@use '../abstracts' as *;
+
+.article-shell {
+    margin-top: var(--space-page-start);
+    margin-bottom: var(--space-section);
+}
+
+.article-content {
+    display: grid;
+    gap: var(--space-block);
+    padding: var(--padding-content);
+    background:
+        radial-gradient(circle at top right, rgba(57, 231, 255, 0.12), transparent 30%),
+        linear-gradient(180deg, rgba(17, 28, 67, 0.94), rgba(18, 16, 40, 0.92));
+    border: 1px solid var(--surface-border-default);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-hard);
+}
+
+.article-hero {
+    display: grid;
+    gap: var(--space-block);
+}
+
+.article-media {
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--surface-border-subtle);
+    background: var(--surface-fill-soft);
+
+    &--contain {
+        background: rgba(5, 8, 22, 0.72);
+    }
+}
+
+.article-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 16rem;
+    object-fit: cover;
+
+    &--contain {
+        object-fit: contain;
+    }
+}
+
+.article-copy {
+    display: grid;
+    gap: var(--space-stack);
+}
+
+.article-title {
+    color: var(--color-text);
+    font-size: var(--title-article);
+    line-height: var(--leading-tight);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.article-lead {
+    color: var(--color-gray);
+    font-size: var(--text-lead);
+    line-height: var(--leading-copy);
+    text-align: center;
+}
+
+.article-text {
+    color: var(--color-text-2);
+    font-size: var(--text-body);
+    line-height: var(--leading-relaxed);
+    text-align: center;
+}
+
+.article-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--space-xs);
+}
+
+.article-cta {
+    min-width: 11rem;
+}
+
+@include desktop {
+    .article-content {
+        padding: var(--padding-content-lg);
+    }
+
+    .article-hero {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        align-items: center;
+        gap: var(--space-2xl);
+    }
+
+    .article-image {
+        min-height: 24rem;
+    }
+
+    .article-copy {
+        gap: var(--space-block);
+    }
+
+    .article-title,
+    .article-lead,
+    .article-text {
+        text-align: left;
+    }
+
+    .article-actions {
+        justify-content: flex-start;
+    }
+}
+

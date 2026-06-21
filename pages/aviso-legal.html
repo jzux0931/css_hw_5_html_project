@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Descubre y aprende todo lo relacionado con el Desarrollo FullStack"/>
+    <title>CSS Homework 5 - Aviso Legal | Conquer Crypto</title>
+  </head>
+
+  <body class="main">
+    <header class="header">
+      <figure>
+        <img
+          width="220px"
+          src="/src/assets/icons/logotipo-conquer-crypto.png"
+          alt="Logotipo de Conquer Crypto"
+        />
+      </figure>
+
+      <nav class="navbar">
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+        <label for="menu-toggle" class="hamburger-btn">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+
+        <div class="side-menu">
+          <ul class="menu-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+            <li class="menu-item menu-item--has-submenu">
+              <details class="submenu">
+                <summary class="submenu__trigger">Cursos</summary>
+                <ul class="submenu-links">
+                  <li><a href="cursos.html">Ver todos los cursos</a></li>
+                  <li><a href="cursos/curso-fullstack.html">Curso FullStack</a></li>
+                  <li><a href="cursos/curso-ia.html">Curso IA</a></li>
+                </ul>
+              </details>
+            </li>
+            <li class="menu-item menu-item--has-submenu">
+              <details class="submenu">
+                <summary class="submenu__trigger">Blog</summary>
+                <ul class="submenu-links">
+                  <li><a href="blog.html">Ver todo el blog</a></li>
+                  <li><a href="blog/blog-fullstack-roadmap.html">Roadmap FullStack</a></li>
+                  <li><a href="blog/blog-que-es-fullstack-dev.html">Qué es FullStack</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-intro content-shell">
+        <h1 class="page-intro__title">Aviso legal</h1>
+        <p class="page-intro__text">Actualizado por última vez el 20 de Enero de 2023.</p>
+      </section>
+
+      <section class="article-shell content-shell">
+        <article class="article-content">
+          <div class="article-copy">
+            <p class="article-text">
+              Información en cumplimiento de la normativa de protección de datos
+              personales a nivel internacional.
+            </p>
+
+            <div class="section-header">
+              <h2 class="section-title">Informacion de la empresa</h2>
+            </div>
+
+            <p class="article-text">
+              Empresa, número NO8376Al en Emiratos Árabes Unidos.
+            </p>
+
+            <p class="article-text">
+              Dirección postal: Al Shmookh Business Center M 1003, One UAQ, UAQ Free
+              Trade Zone, Umm Al Quwain, U.A.E.
+            </p>
+
+            <div class="section-header">
+              <h2 class="section-title">Contacto</h2>
+            </div>
+
+            <p class="article-text">
+              Dirección de correo electrónico de contacto:
+              enrique.romero@conquercrypto.com
+            </p>
+            
+            <p class="article-text">
+              Nuestra página web: www.conquercrypto.io
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__container">© Conquer Crypto 2023 - <a class="footer__link" href="aviso-legal.html">Aviso Legal</a></p>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

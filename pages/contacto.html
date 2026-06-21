@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <meta name="description" content="Descubre el equipo que forma nuestra academia"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Homework 5 - Contacto | Conquer Crypto</title>
+  </head>
+
+<body class="main">
+  <header class="header">
+    <figure>
+      <img
+        width="220px"
+        src="/src/assets/icons/logotipo-conquer-crypto.png"
+        alt="Logotipo de Conquer Crypto"
+      />
+    </figure>
+
+    <nav class="navbar">
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+      <label for="menu-toggle" class="hamburger-btn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </label>
+
+      <div class="side-menu">
+        <ul class="menu-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+          <li class="menu-item menu-item--has-submenu">
+            <details class="submenu">
+              <summary class="submenu__trigger">Cursos</summary>
+              <ul class="submenu-links">
+                <li><a href="cursos.html">Ver todos los cursos</a></li>
+                <li><a href="cursos/curso-fullstack.html">Curso FullStack</a></li>
+                <li><a href="cursos/curso-ia.html">Curso IA</a></li>
+              </ul>
+            </details>
+          </li>
+          <li class="menu-item menu-item--has-submenu">
+            <details class="submenu">
+              <summary class="submenu__trigger">Blog</summary>
+              <ul class="submenu-links">
+                <li><a href="blog.html">Ver todo el blog</a></li>
+                <li><a href="blog/blog-fullstack-roadmap.html">Roadmap FullStack</a></li>
+                <li><a href="blog/blog-que-es-fullstack-dev.html">Qué es FullStack</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a class="is-current" aria-current="page" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro content-shell">
+      <h1 class="page-intro__title">Contacta con nosotros</h1>
+      <p class="page-intro__text">
+        Contacta con nosotros y haznos las consultas que necesites.
+      </p>
+    </section>
+
+    <section class="contact-stack content-shell content-shell--wide">
+      <div>
+        <div class="section-header">
+          <h2 class="section-title">Formulario</h2>
+        </div>
+
+        <form class="form-card contact-stack__form" action="">
+          <div class="form-field">
+            <label class="form-label" for="name">Nombre</label>
+            <input class="form-control" type="text" name="name" id="name" placeholder="Tu nombre">
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-control" type="email" name="email" id="email" placeholder="name@example.com" required>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="comment">Comentario</label>
+            <textarea class="form-control" name="comment" id="comment" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="button-pill" type="submit">Enviar</button>
+            <input class="button-secondary" type="reset" value="Borrar formulario">
+          </div>
+        </form>
+      </div>
+
+      <div>
+        <div class="section-header">
+          <h2 class="section-title">Puedes encontrarnos aquí</h2>
+        </div>
+
+        <div class="contact-map">
+          <iframe
+            class="contact-map__frame"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1590.1374022616253!2d-3.613959253652233!3d37.14616472430474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1688535349624!5m2!1ses!2ses"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer__container">© Conquer Crypto 2023 - <a class="footer__link" href="aviso-legal.html">Aviso Legal</a></p>
+  </footer>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

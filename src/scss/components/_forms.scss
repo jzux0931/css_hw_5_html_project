@@ -1,0 +1,121 @@
+@use '../abstracts' as *;
+
+.form-shell {
+    margin-top: var(--space-section-compact);
+    margin-bottom: var(--space-section);
+}
+
+.form-card {
+    display: grid;
+    gap: var(--space-stack);
+    padding: var(--padding-content);
+    background:
+        radial-gradient(circle at top right, var(--surface-accent-soft), transparent 28%),
+        linear-gradient(180deg, rgba(17, 28, 67, 0.94), rgba(98, 22, 92, 0.5));
+    border: 1px solid var(--surface-border-default);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-hard);
+}
+
+.form-field {
+    display: grid;
+    gap: var(--space-xs);
+}
+
+.form-label {
+    color: var(--color-text);
+    font-size: var(--text-meta);
+    font-weight: 700;
+}
+
+.form-control {
+    width: 100%;
+    min-height: 3.25rem;
+    padding: 0.9rem 1rem;
+    border: 1px solid rgba(57, 231, 255, 0.2);
+    border-radius: var(--radius-sm);
+    background: var(--surface-fill-muted);
+    color: var(--color-text);
+    transition:
+        border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out,
+        background-color 0.15s ease-in-out;
+
+    &::placeholder {
+        color: var(--color-text-2);
+    }
+
+    &:focus-visible {
+        outline: none;
+        border-color: rgba(57, 231, 255, 0.7);
+        background: rgba(255, 255, 255, 0.06);
+        box-shadow: 0 0 0 3px rgba(57, 231, 255, 0.14);
+    }
+}
+
+.form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-stack-sm);
+    justify-content: center;
+    margin-top: var(--space-xs);
+}
+
+.button-pill,
+.button-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 10rem;
+    min-height: 3.25rem;
+    padding: 0.85rem 1.4rem;
+    border-radius: var(--radius-pill);
+    font-size: var(--text-meta);
+    font-weight: 600;
+    text-align: center;
+    transition:
+        background-color 0.15s ease-in-out,
+        color 0.15s ease-in-out,
+        transform 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out,
+        border-color 0.15s ease-in-out;
+}
+
+.button-pill {
+    background-color: var(--color-accent);
+    color: var(--color-dark-2);
+    border: 1px solid transparent;
+
+    &:hover,
+    &:focus-visible {
+        background-color: var(--color-accent-2);
+        transform: var(--interactive-lift-md);
+        box-shadow: var(--shadow-soft);
+    }
+}
+
+.button-secondary {
+    background: var(--surface-fill-muted);
+    color: var(--color-text);
+    border: 1px solid rgba(57, 231, 255, 0.18);
+
+    &:hover,
+    &:focus-visible {
+        background: var(--surface-fill-hover);
+        border-color: rgba(57, 231, 255, 0.4);
+        transform: var(--interactive-lift-sm);
+        box-shadow: var(--shadow-glow);
+    }
+}
+
+@include desktop {
+    .form-card {
+        gap: var(--space-block);
+        padding: var(--padding-content-lg);
+    }
+
+    .form-actions {
+        justify-content: flex-start;
+    }
+}
+

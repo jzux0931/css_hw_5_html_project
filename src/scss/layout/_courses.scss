@@ -1,0 +1,189 @@
+@use '../abstracts' as *;
+
+.courses {
+    display: grid;
+    gap: var(--space-block);
+    width: var(--container-mobile-fluid);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: var(--space-section);
+    padding: var(--section-padding-block) var(--padding-shell-inline);
+    background-image:
+        radial-gradient(circle at top left, rgba(57, 231, 255, 0.18), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(168, 255, 96, 0.20), transparent 24%),
+        linear-gradient(160deg, rgba(8, 18, 40, 0.96), rgba(20, 44, 62, 0.93));
+    color: var(--color-text);
+    box-shadow: 0 12px 34px rgba(0, 0, 0, 0.24);
+    border-radius: var(--radius-md);
+
+    &__header,
+    &__footer {
+        display: grid;
+        gap: var(--space-stack-sm);
+        justify-items: center;
+        text-align: center;
+    }
+
+    &__title {
+        color: var(--color-text);
+        font-size: var(--title-section);
+        line-height: var(--leading-title);
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        color: var(--color-gray);
+        max-width: 50rem;
+        font-size: var(--text-section);
+        line-height: var(--leading-copy);
+        text-align: center;
+    }
+
+    &__grid {
+        display: grid;
+        gap: var(--cards-grid-gap);
+    }
+
+    &__card {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: var(--space-stack);
+        padding: var(--padding-card);
+        justify-items: center;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
+        border: 1px solid var(--surface-border-default);
+        border-radius: var(--radius-md);
+        transition:
+            background-color 0.15s ease-in-out,
+            transform 0.15s ease-in-out,
+            box-shadow 0.15s ease-in-out;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.10);
+            transform: var(--interactive-lift-md);
+            box-shadow: var(--shadow-glow);
+        }
+    }
+
+    &__media {
+        width: 100%;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+        border-radius: var(--radius-sm);
+        border: 1px solid var(--surface-border-subtle);
+        background: var(--surface-fill-soft);
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: var(--radius-sm);
+    }
+
+    &__image--cover {
+        object-fit: cover;
+    }
+
+    &__image--contain {
+        object-fit: contain;
+    }
+
+    &__body {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        gap: var(--space-stack);
+        justify-items: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__title-2 {
+        color: var(--color-text);
+        font-size: var(--title-card);
+        line-height: var(--leading-title);
+        text-align: center;
+    }
+
+    &__text-2 {
+        color: var(--color-gray);
+        font-size: var(--text-card);
+        line-height: var(--leading-copy);
+        text-align: center;
+    }
+
+    &__links {
+        display: grid;
+        justify-items: center;
+        text-align: center;
+        font-size: var(--text-section);
+        line-height: var(--leading-copy);
+        gap: var(--space-stack);
+    }
+
+    &__cta {
+        display: inline-block;
+        min-width: 10rem;
+        min-height: 3.25rem;
+        padding: 0.85rem 1.4rem;
+        background-color: var(--color-accent);
+        backdrop-filter: blur(12px);
+        border: 1px solid transparent;
+        color: var(--color-dark-2);
+        font-size: var(--text-meta);
+        font-weight: 600;
+        text-align: center;
+        border-radius: var(--radius-pill);
+        transition:
+            background-color 0.15s ease-in-out,
+            transform 0.15s ease-in-out,
+            box-shadow 0.15s ease-in-out;
+
+        &:hover,
+        &:focus-visible {
+            background-color: var(--color-accent-2);
+            transform: var(--interactive-lift-md);
+            box-shadow: var(--shadow-soft);
+        }
+    }
+
+    &__cta--inline {
+        margin-top: var(--space-xs);
+    }
+
+    @include desktop {
+        width: 100%;
+        max-width: var(--shell-page-max);
+
+        &__grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        &__card {
+            min-height: 100%;
+            align-content: start;
+        }
+
+        &__media {
+            min-height: var(--card-media-height);
+        }
+
+        &__image {
+            width: 100%;
+            height: 100%;
+        }
+
+        &__image--cover {
+            object-fit: cover;
+        }
+
+        &__image--contain {
+            object-fit: contain;
+        }
+    }
+}
+
+
